@@ -1,12 +1,12 @@
-# ${title}
-## ${description}
-## ${table of contents}
-## ${installation}
-## ${usage}
-## ${license}
-## ${contributing}
-## ${tests}
-## ${questions}
+# ${data.title}
+## ${data.description}
+## ${data.tableofcontents}
+## ${data.installation}
+## ${data.usage}
+## ${data.license}
+## ${data.contributing}
+## ${data.tests}
+## ${data.questions}
 
 
 
