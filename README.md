@@ -7,5 +7,6 @@ When creating an open source project on GitHub, it’s important to have a high-
 ## Installation
 You will need to run npm init -y in your terminal and then npm i inquierer in your terminal
 ## Link to walkthrough video
+https://user-images.githubusercontent.com/101743933/164586461-83ad9da4-0a00-4d47-b42e-558db4eb53d9.mp4
 
 
