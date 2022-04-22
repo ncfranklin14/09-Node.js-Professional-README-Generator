@@ -15,12 +15,12 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
+            message: 'What are the steps required to install your project? Provide a step-by-step description of how to get your project running.',
             name: 'installation',
         },
         {
             type: 'input',
-            message: 'Provide instructions and examples for use. Include screenshots of your application.',
+            message: 'Provide instructions and examples for use. Include screenshots of your application if necessary.',
             name: 'usage'
         },
         {
@@ -41,7 +41,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Provide your email address that users can reach you if they have any questions',
+            message: 'Provide your email address so that users can reach you if they have any questions',
             name: 'questions1',
         },
         {
@@ -50,8 +50,8 @@ inquirer
             name: 'questions2',
         },
     ]).then((data) => {
-        const filename = `${data.title.toUpperCase().split(' ').join('')}.md`;
-        //   //   use appendfile or writefile
+        const filename = `${data.title.toUpperCase().split(' ').join('')}README.md`;
+        //  use appendfile or writefile
         fs.writeFile(filename, `# ${data.title}\
     ![license](https://img.shields.io/badge/license-${data.license}-brightgreen)
 * [Description](#description)
