@@ -20,7 +20,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What Provide instructions and examples for use. Include screenshots as needed.',
+            message: 'Provide instructions and examples for use. Include screenshots of your application.',
             name: 'usage'
         },
         {
@@ -31,7 +31,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Provide a guidelines for how other developers can contirbute to your porject',
+            message: 'Provide a list of your collaborators, if any. Include links to their GitHub profiles.',
             name: 'contributing',
         },
         {
@@ -41,8 +41,13 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Provide your email and github link so that users can reach you if they have any questions',
-            name: 'questions',
+            message: 'Provide your email address that users can reach you if they have any questions',
+            name: 'questions1',
+        },
+        {
+            type: 'input',
+            message: 'Provide your GitHub link so that users can reach you if they have any questions',
+            name: 'questions2',
         },
     ]).then((data) => {
         const filename = `${data.title.toUpperCase().split(' ').join('')}.md`;
@@ -74,8 +79,10 @@ ${data.contributing}
 ## Tests
 ${data.tests}
     
-## Questions
-${data.questions}
+## Questions 
+If you have questions, reach out using the following contact info:
+${data.questions1}
+${data.questions2}
     `,
             (err) =>
                 err ? console.error(err) : console.log('Commit logged!')
